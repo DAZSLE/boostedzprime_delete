@@ -1,6 +1,4 @@
-# boostedhiggs
-
-
+# boostedzprime
 
 ## coffea+tensorflow capability (standalone, transportable conda environment)
 ```bash
@@ -13,13 +11,15 @@ pip install coffea
 conda install -c conda-forge xrootd
 
 
-git clone git@github.com:jeffkrupa-/boostedhiggs.git
-cd boostedhiggs
+git clone git@github.com:DAZSLE/boostedzprime.git
+cd boostedzprime
 pip install --user --editable .
 
 # To make the environment transportable
 conda install -c conda-forge conda-pack
 conda-pack
 ```
+
+Disclaimer: sporked from `boostedhiggs` for github searchability.
 
 
