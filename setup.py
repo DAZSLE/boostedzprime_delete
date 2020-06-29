@@ -8,14 +8,14 @@ from setuptools import (
 
 
 about = {}
-with open(os.path.join("boostedhiggs", "version.py")) as f:
+with open(os.path.join("boostedzprime", "version.py")) as f:
     exec(f.read(), about)
 
 
 needs_pytest = {"pytest", "test", "ptr"}.intersection(sys.argv)
 pytest_runner = ["pytest-runner"] if needs_pytest else []
 
-setup(name="boostedhiggs",
+setup(name="boostedzprime",
       version=about["__version__"],
       packages=find_packages(),
       scripts=[],
@@ -25,8 +25,8 @@ setup(name="boostedhiggs",
       long_description_content_type="text/markdown",
       maintainer="Nick Smith",
       maintainer_email="nick.smith@cern.ch",
-      url="https://github.com/nsmith-/boostedhiggs",
-      download_url="https://github.com/nsmith-/boostedhiggs/releases",
+      url="https://github.com/nsmith-/boostedzprime",
+      download_url="https://github.com/nsmith-/boostedzprime/releases",
       license="BSD 3-clause",
       test_suite="tests",
       install_requires=[

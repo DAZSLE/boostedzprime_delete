@@ -5,7 +5,7 @@ import json
 from coffea.nanoaod.methods import Candidate
 from coffea.util import load, save
 from coffea.nanoaod import NanoEvents
-from boostedhiggs.ddt_processor import DDTProcessor
+from boostedzprime.ddt_processor import DDTProcessor
 import argparse
 import scipy.ndimage as sc
 import matplotlib.pyplot as plt
@@ -68,7 +68,7 @@ def build_ddt_map(coffeafile, percentile, postfix):
     template.label = 'GRU cut at ' + str(int(100*percentile)) + '%'
 
     plot(template, 'ddt_%i_%s'%(int(100*percentile),postfix))
-    save(template, '../boostedhiggs/ddtmap_%s.coffea'%postfix) 
+    save(template, '../boostedzprime/ddtmap_%s.coffea'%postfix) 
 
     '''
     #print(template)
@@ -87,7 +87,7 @@ def build_ddt_map(coffeafile, percentile, postfix):
     values_nonan = template.values()[()]
 
     plot(template, 'ddt_%i_smoothed_%s'%(int(100*percentile), postfix))
-    save(template, '../boostedhiggs/ddtmap_smooth_%s.coffea'%postfix) 
+    save(template, '../boostedzprime/ddtmap_smooth_%s.coffea'%postfix) 
     '''
     import ROOT
     outfile = ROOT.TFile("plots/n2ddtmap_2018bits_GaussianSmoothing1Sigma_CorrectVersion.root","recreate")

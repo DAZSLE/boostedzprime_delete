@@ -21,7 +21,7 @@ tar -zxf dazsle_coffea.tgz
 
 
 xrdcp -f root://cmseos.fnal.gov//store/user/jkrupa/tf.tar.gz ./tf.tar.gz
-ls -ltrh boostedhiggs 
+ls -ltrh boostedzprime 
 #tar -zxf coffeaenv.tar.gz
 mkdir tf
 tar -xf tf.tar.gz -C tf

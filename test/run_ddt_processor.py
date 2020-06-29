@@ -5,7 +5,7 @@ import json
 from coffea.nanoaod.methods import Candidate
 
 from coffea.nanoaod import NanoEvents
-from boostedhiggs.ddt_processor import DDTProcessor
+from boostedzprime.ddt_processor import DDTProcessor
 import argparse
 
 def run_processor(year,selsamples,starti,endi,outname):
