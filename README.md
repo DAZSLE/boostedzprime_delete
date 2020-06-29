@@ -16,6 +16,7 @@ conda install -c conda-forge xrootd
 ```
 (Accept some more options)
 
+```
 git clone git@github.com:DAZSLE/boostedzprime.git
 cd boostedzprime
 pip install --user --editable .
