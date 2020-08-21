@@ -13,7 +13,7 @@ os.environ["OMP_NUM_THREADS"] = "1"
 #tf.config.threading.set_inter_op_parallelism_threads(0)
 #tf.config.threading.set_intra_op_parallelism_threads(0)
 
-model = keras.models.load_model("../boostedhiggs/data/weights_gru.h5")
+model = keras.models.load_model("../boostedzprime/data/weights_gru.h5")
 
 def run_model(jets):
     def pad_and_flatten(val): 

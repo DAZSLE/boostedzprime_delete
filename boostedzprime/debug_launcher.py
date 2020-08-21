@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 # import mplhep
 # plt.style.use(mplhep.style.ATLAS)
 from twoProngGRU import *
-#from boostedhiggs import HbbProcessor, BTagEfficiency
+#from boostedzprime import HbbProcessor, BTagEfficiency
 from coffea.nanoaod import NanoEvents
 from hbbprocessor import HbbProcessor
 from ddt_processor import DDTProcessor

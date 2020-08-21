@@ -1,18 +1,18 @@
 import logging
 import numpy as np
 from coffea import processor, hist
-from boostedhiggs.common import (
+from boostedzprime.common import (
     getBosons,
     matchedBosonFlavor,
 )
-from boostedhiggs.corrections import (
+from boostedzprime.corrections import (
     corrected_msoftdrop,
     n2ddt_shift,
     add_pileup_weight,
     add_VJets_NLOkFactor,
     add_jetTriggerWeight,
 )
-from boostedhiggs.btag import BTagEfficiency, BTagCorrector
+from boostedzprime.btag import BTagEfficiency, BTagCorrector
 
 # for old pancakes
 from coffea.nanoaod.methods import collection_methods, FatJet

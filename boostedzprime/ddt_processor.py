@@ -1,11 +1,11 @@
 import logging
 import numpy as np
 from coffea import processor, hist
-from boostedhiggs.twoProngGRU import *
+from boostedzprime.twoProngGRU import *
 from coffea.nanoaod.methods import collection_methods, Candidate
 collection_methods["FatJetPFCands"] = Candidate
 
-from boostedhiggs.corrections import (
+from boostedzprime.corrections import (
     corrected_msoftdrop,
     add_pileup_weight,
     add_jetTriggerWeight,

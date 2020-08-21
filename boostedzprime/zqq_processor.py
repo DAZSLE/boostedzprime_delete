@@ -2,11 +2,11 @@ import logging
 from functools import partial
 import numpy as np
 from coffea import processor, hist
-from boostedhiggs.twoProngGRU import *
+from boostedzprime.twoProngGRU import *
 from coffea.nanoaod.methods import collection_methods, Candidate
 #collection_methods["FatJetPFCands"] = Candidate
 
-from boostedhiggs.corrections import (
+from boostedzprime.corrections import (
     corrected_msoftdrop,
     gruddt_shift,
     n2ddt_shift,
@@ -15,7 +15,7 @@ from boostedhiggs.corrections import (
     add_jetTriggerWeight,
     add_VJets_NLOkFactor,
 )
-from boostedhiggs.common import (
+from boostedzprime.common import (
     getBosons,
 )
 
